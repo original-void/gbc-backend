@@ -62,7 +62,7 @@ app.post('/stk-push', async (req, res) => {
         PartyA: formattedPhone,
         PartyB: MPESA_SHORTCODE,
         PhoneNumber: formattedPhone,
-        CallBackURL: `https://gbc-stk.onrender.com/mpesa-callback`,
+        CallBackURL: `https://gbc-backend-nzou.onrender.com/mpesa-callback`,
         AccountReference: 'GBC Questions',
         TransactionDesc: 'GBC Premium Unlock'
       },
