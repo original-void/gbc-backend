@@ -5,6 +5,7 @@ const admin = require('firebase-admin');
 const cors = require('cors');
 
 const app = express();
+app.get("/", (req, res) => res.send("GBC Backend is running ✅"));
 app.use(express.json());
 app.use(cors());
 
