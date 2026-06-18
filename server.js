@@ -11,7 +11,8 @@ app.use(cors());
 // Firebase Admin
 const serviceAccount = require('./serviceAccountKey.json');
 admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount)
+  credential: admin.credential.cert(serviceAccount),
+  projectId: "junior-study"
 });
 const db = admin.firestore();
 
